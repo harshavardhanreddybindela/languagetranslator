@@ -81,6 +81,4 @@ constructed_url= https://api.cognitive.microsofttranslator.com/translate?api-ver
 What is integrity attribute in the link tag?
 The integrity property of the HTMLLinkElement interface is a string containing **inline metadata** that a **browser** can **use** to **verify** that a **fetched resource has been delivered without unexpected manipulation**.
 
-How to create a project in the Azure Translator
 
-Detailed ax
