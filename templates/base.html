@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>{% block title %}Translation Service{% endblock %}</title>
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+  <!-- Navbar -->
+  <nav class="bg-blue-600 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <a href="/" class="text-white text-lg font-semibold hover:text-gray-200">Home</a>
+        </div>
+        <div>
+          <a href="{{ url_for('index') }}" class="text-white text-lg font-semibold hover:text-gray-200">Translate</a>
+          <a href="{{ url_for('index_post') }}" class="ml-4 text-white text-lg font-semibold hover:text-gray-200">Results</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="py-10">
+    <div class="container mx-auto px-4">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </div>
+</body>
+
+</html>
